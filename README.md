@@ -1,13 +1,15 @@
 # xlang
 
-| Windows Build | Windows Release | Linux Build |
-|---------------|-----------------|-------------|
-| [![Build Status](https://dev.azure.com/msft-xlang/public/_apis/build/status/xlang-CI-windows)](https://dev.azure.com/msft-xlang/public/_build/latest?definitionId=8) | ![Release Status](https://vsrm.dev.azure.com/microsoft/_apis/public/Release/badge/c93e867a-8815-43c1-92c4-e7dd5404f1e1/7/7) | [![Build Status](https://dev.azure.com/msft-xlang/public/_apis/build/status/xlang-CI-ubuntu)](https://dev.azure.com/msft-xlang/public/_build/latest?definitionId=1) |
+This repo is the starting point for the xlang project, which enables developers to take existing shared libraries,
+implemented in one programming language and make that library's APIs available to client code using a different programming language. Thus the name "xlang", for cross-language.  
 
-## Overview
+See these related repos:
 
-The xlang project enables developers to take existing shared libraries,
-implemented in one programming language and make that library's APIs available to client code using a different programming language. Thus the name "xlang", for cross-language.
+|Repository|Status|
+|-|-|
+|[C++/WinRT Language Projection](https://github.com/microsoft/cppwinrt)|[![Build status](https://dev.azure.com/microsoft/Dart/_apis/build/status/cppwinrt%20internal%20build)](https://dev.azure.com/microsoft/Dart/_build/latest?definitionId=31784)|
+|[WinMD Parser Library](https://github.com/microsoft/winmd)|[![Build Status](https://dev.azure.com/microsoft/Dart/_apis/build/status/WinMD%20Nuget?branchName=master)](https://dev.azure.com/microsoft/Dart/_build/latest?definitionId=44715&branchName=master)|
+[WinRT Test Component](https://github.com/microsoft/TestWinRT)|[![Build Status](https://dev.azure.com/microsoft/Dart/_apis/build/status/TestWinRT?branchName=master)](https://dev.azure.com/microsoft/Dart/_build/latest?definitionId=45310&branchName=master)|
 
 Additionally, the xlang toolset will be available on multiple operating systems.
 This means that if your shared library is portable to various operating systems,

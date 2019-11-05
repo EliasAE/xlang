@@ -13,8 +13,8 @@ namespace xlang::cmd
         std::string_view name;
         uint32_t min{ no_min };
         uint32_t max{ no_max };
-        std::string_view arg;
-        std::string_view desc;
+        std::string_view arg{};
+        std::string_view desc{};
     };
 
     struct reader
@@ -116,7 +116,7 @@ namespace xlang::cmd
                 {
                     if (std::filesystem::is_regular_file(file))
                     {
-                        auto filename = std::filesystem::canonical(file.path()).string();
+                        auto filename = file.path().string();
 
                         if (directory_filter(filename))
                         {
